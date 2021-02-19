@@ -31,3 +31,4 @@ package-lock.json
 .settings/
 .classpath
 .project
+.DS_Store
