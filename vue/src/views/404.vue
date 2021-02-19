@@ -1,4 +1,4 @@
-<template>
+404.vue<template>
   <div style="background:#f0f2f5;margin-top: -20px;">
     <div class="wscn-http404">
       <div class="pic-404">

@@ -23,6 +23,7 @@ hs_err_pid*
 
 .idea
 node_modules/
+logs/
 target/
 *.iml
 package-lock.json

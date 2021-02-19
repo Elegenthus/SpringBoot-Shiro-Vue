@@ -1,7 +1,9 @@
 spring:
   datasource:
-      url: jdbc:mysql://localhost:3306/example?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://localhost:3306/db?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
       username: root
-      password: root
+      password: password
 mybatis:
    mapperLocations: classpath:/mapper/*.xml
+server:
+  port: 9090

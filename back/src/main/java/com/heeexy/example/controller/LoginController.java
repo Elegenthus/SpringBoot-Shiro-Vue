@@ -1,6 +1,7 @@
 package com.heeexy.example.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.heeexy.example.service.CommentService;
 import com.heeexy.example.service.LoginService;
 import com.heeexy.example.util.CommonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,8 @@ public class LoginController {
 
 	@Autowired
 	private LoginService loginService;
+	@Autowired
+	private CommentService commentService;
 
 	/**
 	 * 登录
@@ -28,6 +31,7 @@ public class LoginController {
 	public JSONObject authLogin(@RequestBody JSONObject requestJson) {
 		CommonUtil.hasAllRequired(requestJson, "username,password");
 		return loginService.authLogin(requestJson);
+//		return commentService.analyseComment(requestJson);
 	}
 
 	/**

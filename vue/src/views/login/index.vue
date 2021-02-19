@@ -49,7 +49,7 @@
             this.$store.dispatch('Login', this.loginForm).then(data => {
               this.loading = false
               if ("success" === data.result) {
-                this.$router.push({path: '/'})
+                this.$router.push({path: '/input'})
               } else {
                 this.$message.error("账号/密码错误");
               }
